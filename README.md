@@ -1,3 +1,9 @@
+添加 charts
+
+```
+helm repo add bwcx https://bwcxyk.github.io/charts
+```
+
 打包
 
 ```bash
