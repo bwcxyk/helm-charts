@@ -1,0 +1,49 @@
+apiVersion: v1
+entries:
+  longhorn:
+  - apiVersion: v1
+    appVersion: v1.5.3
+    created: "2023-11-22T14:29:20.5216244+08:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: b6f928ac0aca59fa050ca591c167120a689b6af1338a40e0f46fb76f5854b5f5
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - longhorn-1.5.3.tgz
+    version: 1.5.3
+  nacos:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-11-22T14:29:20.5221283+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 61346f901b07b388116162227799d6d85406d635648396648ba799047caee115
+    maintainers:
+    - name: arrowfeng
+    - name: paderlol
+    name: nacos
+    urls:
+    - nacos-0.1.5.tgz
+    version: 0.1.5
+generated: "2023-11-22T14:29:20.5188155+08:00"
