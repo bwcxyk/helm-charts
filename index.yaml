@@ -3,7 +3,7 @@ entries:
   longhorn:
   - apiVersion: v1
     appVersion: v1.5.3
-    created: "2023-11-22T14:29:20.5216244+08:00"
+    created: "2023-11-22T14:55:10.7994759+08:00"
     description: Longhorn is a distributed block storage system for Kubernetes.
     digest: b6f928ac0aca59fa050ca591c167120a689b6af1338a40e0f46fb76f5854b5f5
     home: https://github.com/longhorn/longhorn
@@ -36,7 +36,7 @@ entries:
   nacos:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-11-22T14:29:20.5221283+08:00"
+    created: "2023-11-22T14:55:10.8004631+08:00"
     description: A Helm chart for Kubernetes
     digest: 61346f901b07b388116162227799d6d85406d635648396648ba799047caee115
     maintainers:
@@ -46,4 +46,21 @@ entries:
     urls:
     - nacos-0.1.5.tgz
     version: 0.1.5
-generated: "2023-11-22T14:29:20.5188155+08:00"
+  openelb:
+  - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2023-11-22T14:55:10.8014655+08:00"
+    description: Bare Metal Load-balancer for Kubernetes Cluster
+    digest: 0b0008a21235b1bdf8bc658f9add7cbb29af079de4f80ed880f605be6e16efaf
+    icon: https://raw.githubusercontent.com/openelb/openelb/master/docs/logo/openelb-vertical.svg
+    maintainers:
+    - email: kubesphere@gmail.com
+      name: KubeSphere
+    name: openelb
+    sources:
+    - https://github.com/openelb/openelb
+    type: application
+    urls:
+    - openelb-0.5.0.tgz
+    version: 0.5.0
+generated: "2023-11-22T14:55:10.7954401+08:00"
