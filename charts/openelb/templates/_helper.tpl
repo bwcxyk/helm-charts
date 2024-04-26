@@ -38,8 +38,12 @@ If release name contains chart name it will be used as a full name.
 Create a default fully qualified manager name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 */}}
-{{- define "openelb.manager.fullname" -}}
-{{- printf "%s-%s" (include "openelb.fullname" .) "manager" | trunc 63 | trimSuffix "-" -}}
+{{- define "openelb.controller.fullname" -}}
+{{- printf "%s-%s" (include "openelb.fullname" .) "controller" | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
+{{- define "openelb.speaker.fullname" -}}
+{{- printf "%s-%s" (include "openelb.fullname" .) "speaker" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
 {{- define "openelb.admission.fullname" -}}
@@ -67,9 +71,14 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "openelb.manager.labels" -}}
+{{- define "openelb.controller.labels" -}}
 {{- include "openelb.labels" . }}
-app.kubernetes.io/component: {{ include "openelb.manager.fullname" . }}
+app.kubernetes.io/component: {{ include "openelb.controller.fullname" . }}
+{{- end -}}
+
+{{- define "openelb.speaker.labels" -}}
+{{- include "openelb.labels" . }}
+app.kubernetes.io/component: {{ include "openelb.speaker.fullname" . }}
 {{- end -}}
 
 {{- define "openelb.admission.labels" -}}
@@ -82,10 +91,14 @@ app.kubernetes.io/component: {{ include "openelb.admission.fullname" . }}
 app.kubernetes.io/component: {{ include "openelb.keepalived.fullname" . }}
 {{- end -}}
 
-{{- define "openelb.manager.serviceAccountName" -}}
-    {{ default "openelb-manager" .Values.manager.serviceAccount.name }}
+{{- define "openelb.controller.serviceAccountName" -}}
+    {{ default "openelb-controller" .Values.controller.serviceAccountName }}
+{{- end -}}
+
+{{- define "openelb.speaker.serviceAccountName" -}}
+    {{ default "openelb-speaker" .Values.speaker.serviceAccountName }}
 {{- end -}}
 
 {{- define "openelb.admission.serviceAccountName" -}}
-    {{ default "openelb-admission" .Values.admission.serviceAccount.name }}
+    {{ default "openelb-admission" .Values.admission.serviceAccountName }}
 {{- end -}}

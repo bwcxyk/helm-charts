@@ -43,7 +43,7 @@ The following table lists the configurable parameters of the OpenELB chart and t
 | Parameter | Description  | Default              |
 | -----------------------    | -----------------------|----------------------|
 | `manager.image.repository`| `manager` image name.        | `kubesphere/openelb` |
-| `manager.image.tag`       | `manager` image tag.         | `v0.5.0`             |
+| `manager.image.tag`       | `manager` image tag.         | `v0.6.0`             |
 | `manager.image.pullPolicy`| `manager` image pull Policy. | `IfNotPresent`       |
 | `manager.resources`       | openelb manager resource requests and limits      | `{}`                 |
 | `manager.nodeSelector`     | Node labels for pod assignment             | `{}`                 |
