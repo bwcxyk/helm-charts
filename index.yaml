@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   bytebase:
   - apiVersion: v2
-    created: "2024-12-27T10:01:31.5167375+08:00"
+    created: "2025-11-14T15:10:21.7002498+08:00"
     description: Safe database schema change and version control for DevOps teams.
     digest: 6d08a1794c391b146fe7f82f3277116a50afa0a52fc33e488bb6b61b71960cf8
     home: https://bytebase.com/
@@ -20,7 +20,7 @@ entries:
   dolphinscheduler-helm:
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2024-12-27T10:01:31.5326104+08:00"
+    created: "2025-11-14T15:10:21.7169682+08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -55,7 +55,7 @@ entries:
   longhorn:
   - apiVersion: v1
     appVersion: v1.5.3
-    created: "2024-12-27T10:01:31.5347111+08:00"
+    created: "2025-11-14T15:10:21.719523+08:00"
     description: Longhorn is a distributed block storage system for Kubernetes.
     digest: b6f928ac0aca59fa050ca591c167120a689b6af1338a40e0f46fb76f5854b5f5
     home: https://github.com/longhorn/longhorn
@@ -86,9 +86,24 @@ entries:
     - longhorn-1.5.3.tgz
     version: 1.5.3
   nacos:
+  - apiVersion: v2
+    appVersion: 3.0.1
+    created: "2025-11-14T15:10:21.7209644+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 05a96485eb388e50d2eecb0a06d6b6a6601c147a92f5be3b3fda0e2334658bb0
+    home: https://nacos.io/
+    icon: https://img.alicdn.com/imgextra/i4/O1CN01rW3vAB1FDWKSOiFf0_!!6000000000453-2-tps-204-40.png
+    maintainers:
+    - name: arrowfeng
+    - name: paderlol
+    - name: yunye
+    name: nacos
+    urls:
+    - nacos-1.0.0.tgz
+    version: 1.0.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2024-12-27T10:01:31.5352385+08:00"
+    created: "2025-11-14T15:10:21.7206874+08:00"
     description: A Helm chart for Kubernetes
     digest: 61346f901b07b388116162227799d6d85406d635648396648ba799047caee115
     maintainers:
@@ -101,7 +116,7 @@ entries:
   openelb:
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2024-12-27T10:01:31.5374248+08:00"
+    created: "2025-11-14T15:10:21.7225123+08:00"
     description: Bare Metal Load-balancer for Kubernetes Cluster
     digest: 8bad553ce9f84ab67bc27236e996af6a872fc20e3f790acda64bceeeb17955c0
     icon: https://raw.githubusercontent.com/openelb/openelb/master/docs/logo/openelb-vertical.svg
@@ -117,7 +132,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2024-12-27T10:01:31.536333+08:00"
+    created: "2025-11-14T15:10:21.7219968+08:00"
     description: Bare Metal Load-balancer for Kubernetes Cluster
     digest: 0b0008a21235b1bdf8bc658f9add7cbb29af079de4f80ed880f605be6e16efaf
     icon: https://raw.githubusercontent.com/openelb/openelb/master/docs/logo/openelb-vertical.svg
@@ -131,4 +146,4 @@ entries:
     urls:
     - openelb-0.5.0.tgz
     version: 0.5.0
-generated: "2024-12-27T10:01:31.5157022+08:00"
+generated: "2025-11-14T15:10:21.6995984+08:00"
