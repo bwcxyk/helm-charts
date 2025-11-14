@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   bytebase:
   - apiVersion: v2
-    created: "2025-11-14T15:13:32.2746666+08:00"
+    created: "2025-11-14T15:28:41.0231641+08:00"
     description: Safe database schema change and version control for DevOps teams.
     digest: 6d08a1794c391b146fe7f82f3277116a50afa0a52fc33e488bb6b61b71960cf8
     home: https://bytebase.com/
@@ -20,7 +20,7 @@ entries:
   dolphinscheduler-helm:
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2025-11-14T15:13:32.29156+08:00"
+    created: "2025-11-14T15:28:41.0388519+08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -55,7 +55,7 @@ entries:
   longhorn:
   - apiVersion: v1
     appVersion: v1.10.1
-    created: "2025-11-14T15:13:32.2961544+08:00"
+    created: "2025-11-14T15:28:41.0419905+08:00"
     description: Longhorn is a distributed block storage system for Kubernetes.
     digest: 46c9716926c96c9d2d09695a279a7c6a64d765a70b1b8d51ffe3e5b8a07607cb
     home: https://github.com/longhorn/longhorn
@@ -87,7 +87,7 @@ entries:
     version: 1.10.1
   - apiVersion: v1
     appVersion: v1.5.3
-    created: "2025-11-14T15:13:32.2997105+08:00"
+    created: "2025-11-14T15:28:41.0448216+08:00"
     description: Longhorn is a distributed block storage system for Kubernetes.
     digest: b6f928ac0aca59fa050ca591c167120a689b6af1338a40e0f46fb76f5854b5f5
     home: https://github.com/longhorn/longhorn
@@ -120,7 +120,7 @@ entries:
   nacos:
   - apiVersion: v2
     appVersion: 3.0.1
-    created: "2025-11-14T15:13:32.3013219+08:00"
+    created: "2025-11-14T15:28:41.0458207+08:00"
     description: A Helm chart for Kubernetes
     digest: 05a96485eb388e50d2eecb0a06d6b6a6601c147a92f5be3b3fda0e2334658bb0
     home: https://nacos.io/
@@ -135,7 +135,7 @@ entries:
     version: 1.0.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2025-11-14T15:13:32.3002695+08:00"
+    created: "2025-11-14T15:28:41.0448216+08:00"
     description: A Helm chart for Kubernetes
     digest: 61346f901b07b388116162227799d6d85406d635648396648ba799047caee115
     maintainers:
@@ -148,7 +148,7 @@ entries:
   openelb:
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2025-11-14T15:13:32.3024461+08:00"
+    created: "2025-11-14T15:28:41.0488217+08:00"
     description: Bare Metal Load-balancer for Kubernetes Cluster
     digest: 8bad553ce9f84ab67bc27236e996af6a872fc20e3f790acda64bceeeb17955c0
     icon: https://raw.githubusercontent.com/openelb/openelb/master/docs/logo/openelb-vertical.svg
@@ -164,7 +164,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2025-11-14T15:13:32.3018836+08:00"
+    created: "2025-11-14T15:28:41.0468203+08:00"
     description: Bare Metal Load-balancer for Kubernetes Cluster
     digest: 0b0008a21235b1bdf8bc658f9add7cbb29af079de4f80ed880f605be6e16efaf
     icon: https://raw.githubusercontent.com/openelb/openelb/master/docs/logo/openelb-vertical.svg
@@ -178,4 +178,22 @@ entries:
     urls:
     - openelb-0.5.0.tgz
     version: 0.5.0
-generated: "2025-11-14T15:13:32.2739692+08:00"
+  seatunnel-helm:
+  - apiVersion: v2
+    appVersion: 2.3.10
+    created: "2025-11-14T15:28:41.0488217+08:00"
+    description: SeaTunnel is a next-generation, high-performance, distributed data
+      integration tool, capable of synchronizing vast amounts of data daily. It's
+      trusted by numerous companies for its efficiency and stability.
+    digest: 5e450c84e4f16619d60663d4bd7c60ac0fc20db050ab5ed908e1b385078a0677
+    home: https://seatunnel.apache.org
+    icon: https://seatunnel.apache.org/image/logo.png
+    keywords:
+    - seatunnel
+    - integration
+    name: seatunnel-helm
+    type: application
+    urls:
+    - seatunnel-helm-2.3.10.tgz
+    version: 2.3.10
+generated: "2025-11-14T15:28:41.022116+08:00"
