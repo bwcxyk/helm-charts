@@ -3,11 +3,11 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: longhorn-recovery-backend
-  namespace: longhorn-system
+  namespace: {{ include "release_namespace" . }}
 spec:
   podSelector:
     matchLabels:
-      app: longhorn-manager
+      longhorn.io/recovery-backend: longhorn-recovery-backend
   policyTypes:
   - Ingress
   ingress:
